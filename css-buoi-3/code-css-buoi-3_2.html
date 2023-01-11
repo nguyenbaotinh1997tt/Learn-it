@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		a:Link{
+			text-decoration: none;
+			color: white;
+		}
+		a:visited{
+			color: white;
+		}
+		a:hover{
+			color: red;
+		}
+		a:active{
+			color: blue;
+		}
+		ul{
+			list-style-type: none;
+			padding: 0;
+			color: blue;
+		}
+		ul > li > ul{
+			display: none;
+		}
+		li:hover > ul{
+			display: block;
+			position: absolute;
+			z-index: 1;
+			left: 200px;
+			box-sizing: border-box;
+		}
+		ul > li{
+			background-color: lightblue;
+			padding: 2px 5px;
+			margin: 1px;
+			position: relative;
+			width: 200px;
+			box-sizing: border-box;
+		}
+		ul > li:hover{
+			font-size: 20px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<a href="#">Kinh dị</a>
+		</li>
+		<li>
+			<a href="#">Hành động</a>
+			<ul>
+				<li><font><a href="#">Chân thực</a></font></li>
+				<li><a href="#">Giả vãi cức</a></li>
+				<li><a href="#">Giả tạm xem được</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Hài hước</a>
+		</li>
+		<li>haha</li>
+
+	</ul>
+</body>
+</html>

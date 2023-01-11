@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#div_tren{
+			height: 50px;
+			width: 100%;
+			background-color: gray;
+			color: white;
+		}
+		#div_duoi{
+			height: 700px;
+			width: 100%;
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+		#div_duoi > .trai{
+			height: 100%;
+			width: 40%;
+			background-color: red;
+			color: white;
+			float: left;
+		}
+		#div_duoi > .trai > .tren{
+			height: 70%;
+			width: 100%;
+			background-color: green;
+			color: white;
+		}
+		#div_duoi > .trai > .duoi{
+			height: 30%;
+			width: 100%;
+			background-color: blue;
+			color: white;
+			text-align: center;
+		}
+
+		#div_duoi > .trai > .duoi > .duoi_1{
+			width: 100%;
+			height: 100%;
+			background-color: gray;
+			padding: 10px 0;
+			box-sizing: border-box;
+
+		}
+		#div_duoi > .phai{
+			height: 100%;
+			width: 60%;
+			background-color: yellow;
+			color: white;
+			float: left;
+		}
+		#div_duoi > .phai > .trai{
+			width: 30%;
+			height: 100%;
+			background-color: red;
+		}
+		#div_duoi > .phai > .trai  > .tren{
+			width: 100%;
+			height: 30%;
+			background-color: green;
+			border-bottom: 4px dotted purple;
+		}
+		#div_duoi > .phai > .trai  > .duoi{
+			width: 50%;
+			height: 70%;
+			background-color: blue;
+			border-right: 4px dotted purple;
+		}
+		.van_ban{
+			width: 100%;
+			height: 90%;
+			overflow: scroll;
+			padding: 30px 20px;
+			box-sizing: border-box;
+			text-align: justify;
+		}
+		.thanh_tren{
+			width: 100%;
+			height: 10%;
+			background-color: pink;
+			color: white;
+			text-align: center;
+			padding: 5px 0;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<div id="div_tren"></div>
+	<div id="div_duoi">
+		<div class="trai">
+			<div class="tren">
+				<div class="thanh_tren">
+					<select style="width: 80%; text-align: center;">
+						<option>CLB lan thành phố</option>
+					</select>
+				</div>
+				<div class="van_ban">
+					Ở Nhật Bản có một người con gái tên là Cây cỏ mồ côi cả cha lẫn mẹ. Nhà nghèo, ngay từ khi còn nhỏ nàng đã phải tự đi làm để kiếm sống. 
+					Nàng phải làm hoa giấy đem ra phố bán. Nhưng hoa bán đã nhiều, mà tiền thu về chẳng đáng là bao. Khi đã ra dáng một thiếu nữ. Cây cỏ cũng không có đủ tiền sắm nổi một bộ kimôno mà các cô con nhà quý phái vẫn mặc. 
+					Một đêm nọ khi Cây cỏ đang mải làm việc trong phòng của mình, bỗng có một con vẹt bay đến đậu trên bậc cửa sổ. Đôi cánh màu xanh của nó đã nhợt nhạt, có lẽ nó đã già song vẫn còn đủ minh mẫn và biết nói tiếng người. 
+					- Đừng đuổi ta, ta sẽ tiết lo cho nàng một điều bí mật về cách làm giàu. 
+					- Vẹt yêu quý ơi, cớ sao ta lại đuổi mi – Cây cỏ buồn bã mỉm cười - ở đời ta chẳng còn biết thộ lộ tâm tình với ai, thế mà mi lại nói được tiếng người. Cứ ở lại đây, cùng chia nghèo, sẻ khó với ta, còn sự giàu sang, phú qúy tốt nhất là chẳng nên màng tới, vì ta rất xa lạ với chuyện ấy. 
+					- Đa tạ Cây cỏ tốt bụng - Vẹt gật gù- Trước khi đi tìm chủ mới, ta đã chăm chú theo dỏi các cô gái bán hoa, và ta đã thấy nàng tặng bông hoa đẹp nhất của mình cho một cô gái nghèo như thế nào rồi. Cô gái nghèo ấy không có tiền nhưng lại rất muốn làm cho người bà ốm yếu của mình được thanh thản hài lòng. Nhưng vì sao ngươi lại phải đi t́m chủ mới? – Cây cỏ hỏi - Phải chăng chủ củ không tốt với mi?
+				</div>
+			</div>
+			<div class="duoi">
+				<div class="duoi_1">
+					<img style="height: 100%;" src="images\la1.jpg">
+					<img style="height: 100%;" src="images\la2.jpg">
+					<img style="height: 100%;" src="images\la3.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="phai">
+			<div class="trai">
+				<div class="tren"></div>
+				<div class="duoi"></div>
+			</div>
+			<div class="phai"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form>
+		Nhập số:
+		<br>
+		<input type="number" id='input_so' placeholder='Nhập số vào đây'>
+		<br>
+		<button type='button' onclick='so_nguyen_to()'>Kiểm tra</button>
+	</form>
+	<div id='ket_qua'></div>
+	<script type="text/javascript">
+		function so_nguyen_to(){
+			let so = document.getElementById('input_so').value;
+			let chia_het = 0
+			let ket_qua = '';
+			for(let i = 1; i <= so; i++){
+				if(so % i == 0){
+					chia_het = chia_het + 1
+				}
+			}
+			if(chia_het == 2){
+				ket_qua = 'Đúng'
+			}else{ket_qua = 'Sai'}
+			document.getElementById('ket_qua').innerHTML = ket_qua;
+		}
+	</script>
+</body>
+</html>

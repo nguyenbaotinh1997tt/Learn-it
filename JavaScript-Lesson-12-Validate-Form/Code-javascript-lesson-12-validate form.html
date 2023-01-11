@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form>
+		Nhập tên:
+		<input type='text' id='nhap_ten' placeholder="Nhập tên vào dcm">
+		<span id='loi_ten'></span>
+		<br>
+		Nhập ngày sinh:
+		<input type='date' id='nhap_ngay_sinh'>
+		<span id='loi_ngay_sinh'></span>
+		<br>
+		Nhập mật khẩu:
+		<input style="width: 300px;" type='text' id='nhap_mat_khau' placeholder="Nhập mật khẩu vào luôn vào dcm">
+		<span id='loi_mat_khau'></span>
+		<br>
+		Giới tính:
+		Nam <input type='radio' name="gioi_tinh">
+		Nữ <input type="radio" name="gioi_tinh">
+		<span id="loi_gioi_tinh"></span>
+		<br>
+		<button type='submit' onclick='return kiem_tra()'>Nhập</button>
+	</form>
+	<script type="text/javascript">
+		function kiem_tra(){
+			let ten = document.getElementById('nhap_ten').value;
+			let ngay_sinh = document.getElementById('nhap_ngay_sinh').value;
+			let mat_khau = document.getElementById('nhap_mat_khau').value;
+			let kiem_tra_loi = true
+
+			//tên//
+			let regex_ten = /^[A-Z1-9]{1,6}$/
+			if(ten.length === 0){
+				document.getElementById('loi_ten').innerHTML = `Tên sai kìa dcm mày lại ngu vcl con chó ơi`;
+				kiem_tra_loi = false
+			}else{
+				if(regex_ten.test(ten) == false){
+					document.getElementById('loi_ten').innerHTML = `Nhập cái đéo gì vậy alo?`
+				}else{
+					document.getElementById('loi_ten').innerHTML = ``
+				}
+			}
+
+			//Ngày sinh//
+			if(ngay_sinh.length === 0){
+				document.getElementById('loi_ngay_sinh').innerHTML = `Ngày sinh lại sai rồi dcm ngu vcl`
+				kiem_tra_loi = false;
+			}else{
+				document.getElementById('loi_ngay_sinh').innerHTML = ``
+			}
+
+			//Mật khẩu//
+			if(mat_khau.length === 0){
+				document.getElementById('loi_mat_khau').innerHTML = `Lỗi mật khẩu nữa kìa đcm m alo?`
+				kiem_tra_loi = false
+			}else{
+				document.getElementById('loi_mat_khau').innerHTML = ``
+			}
+
+			//Giới tính
+			let mang_gioi_tinh = document.getElementsByName('gioi_tinh');
+			let kiem_tra_gioi_tinh = true;
+			for(let i = 0; i < mang_gioi_tinh.length; i++){
+				if(mang_gioi_tinh[i].checked){
+					kiem_tra_gioi_tinh = true
+				}else{
+					kiem_tra_gioi_tinh = false
+				}
+				if(kiem_tra_gioi_tinh == false){
+					document.getElementById('loi_gioi_tinh').innerHTML = `Vãi cức lại sai à`
+					kiem_tra_loi = false
+				}else{
+					document.getElementById('loi_gioi_tinh').innerHTML = ``
+				}
+			}
+			if(kiem_tra_loi == false){
+				return false 
+			}else{
+				return true
+				}
+		}
+	</script>
+</body>
+</html>

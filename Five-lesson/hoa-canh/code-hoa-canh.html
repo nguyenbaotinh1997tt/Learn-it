@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+		<style type="text/css">
+			#div_tong{
+				width: 100%;
+				height: 800px;
+				background-color: black;
+			}
+			#div_tong > .div_tren{
+				width: 100%;
+				height: 100px;
+				background-color: gray;
+			}
+			#div_tong > .div_tren > .trai{
+				width: 30%;
+				height: 100%;
+				background-color: aqua;
+				text-align: center;
+				float: left;
+			}
+			#div_tong > .div_tren > .phai{
+				width: 70%;
+				height: 100%;
+				background-color: pink;
+				text-align: center;
+				float: left;
+			}
+			#div_tong > .div_tren > .phai > .tren{
+				width: 100%;
+				height: 80%;
+				background-color: red;
+				text-align: right;
+			}
+			#div_tong > .div_tren > .phai > .duoi{
+				width: 100%;
+				height: 20%;
+				background-color: purple;
+				text-align: right;
+			}
+			#div_tong > .div_duoi{
+				width: 100%;
+				height: 700px;
+				background-color: green;
+				border-top: 2px solid green;
+			}
+			#div_tong > .div_duoi .cot_1{
+				width: 20%;
+				height: 700px;
+				background-color: blue;
+				float: left;
+				border-right: 2px solid green;
+			}
+			#div_tong > .div_duoi > .cot_1 > .tren{
+				height: 60%;
+				width: 100%;
+			}
+			#div_tong > .div_duoi > .cot_1 > .duoi{
+				height: 40%;
+				text-align: right;
+				width: 100%;
+			}
+			#div_tong > .div_duoi > .cot_2{
+				width: 60%;
+				height: 700px;
+				background-color: yellow;
+				float: left;
+			}
+			#div_tong > .div_duoi > .cot_2 > .trai{
+				width: 15%;
+				height: 100%;
+				background-color: white;
+				float: left;
+			}
+			#div_tong > .div_duoi > .cot_2 > .trai > .tren{
+				width: 100%;
+				height: 50%;
+				background-color: pink;
+			}
+			#div_tong > .div_duoi > .cot_2 > .trai > .duoi{
+				width: 100%;
+				height: 50%;
+				background-color: black;
+			}
+			#div_tong > .div_duoi > .cot_2 > .phai{
+				width: 85%;
+				height: 100%;
+				background-color: aqua;
+				float: left;
+				text-align: justify;
+				padding: 10px;
+				box-sizing: border-box;
+
+			}
+			#div_tong > .div_duoi > .cot_2 > .phai > .tren{
+				width: 100%;
+				height: 30%;
+				background-color: red;
+			}
+			#div_tong > .div_duoi > .cot_2 > .phai > .tren > .trai{
+				width: 60%;
+				height: 100%;
+				background-color: gray;
+				float: left;
+				text-align: center;
+			}
+			#div_tong > .div_duoi > .cot_2 > .phai > .tren > .phai{
+				width: 40%;
+				height: 100%;
+				background-color: blue;
+				float: left;
+			}
+			#div_tong > .div_duoi > .cot_2 > .phai > .duoi{
+				width: 100%;
+				height: 70%;
+				background-color: yellow;
+			}
+			#div_tong > .div_duoi > .cot_3{
+				width: 19%;
+				height: 700px;
+				background-color: gray;
+				float: left;
+				text-align: center;
+				color: white;
+			}
+		</style>
+</head>
+<body>
+	<div id="div_tong">
+		<div class="div_tren">
+			<div class="trai">
+				<img src="images/logo.gif">
+			</div>
+			<div class="phai">
+				<div class="tren">
+					<form>
+						<select>
+							<option>Hội hoa lan & cây cảnh TPHCM</option>
+							<option>Hội còn lại</option>
+							<option>Úm ba la</option>
+						</select>
+						<input type="submit" name="">
+					</form>
+				</div>
+				<div class="duoi">
+					<a style="color: aqua;" href="https://google.com">Hoa và cây cảnh</a>
+					<span class="" style="color: aqua">|</span>
+					<a style="color: aqua;" href="https://google.com">Tin tức</a>
+					<span class="" style="color: aqua">|</span>
+					<a style="color: aqua;" href="https://google.com">Hộp thư</a>
+					<span class="" style="color: aqua">|</span>
+					<a style="color: aqua;" href="https://google.com">Góc thư giãn</a>
+				</div>
+			</div>
+		</div>
+		<hr style="height: 4px; background-color: green; border-width: 0;">
+		<div class="div_duoi">
+			<div class="cot_1">
+				<div class="tren">
+					<img src="images/tintuc_bientrai.gif">
+				</div>
+				<div class="duoi">
+					<img style="width: 100%;" src="images/Hoavang.gif">
+				</div>
+			</div>
+			<div class="cot_2">
+				<div class="trai">
+					<div class="tren">
+						<img src="images\mau.jpg">
+						<br>
+						<img src="images\buom1.gif">
+					</div>
+					<div class="duoi"></div>
+				</div>
+				<div class="phai"><!-- 
+					<div class="tren">
+						<div class="trai">
+							<h1>Muôn hoa đua sắc</h1>
+						</div>
+						<div class="phai"></div>
+					</div>
+					<div class="duoi"></div> -->
+					<img style="float: right;" src="images\buom4.gif">
+					<span style="text-align: center;">
+						<h1>Muôn hoa đua sắc</h1>
+					</span>
+					<span>
+					Hoa cúc vàng trong hàng tứ quý " tùng, cúc, trúc, mai" tượng trưng cho mặt trời, cho quyền lực. Cúc đại đoá bông to, cành cong lộng lẫy sang trọng, cúc vạn thọ giản dị, bền lâu. Hoa cúc là loại "diệp bất li chi, hoa vô lạc địa", lá cúc không bao giờ rời khỏi cành dẫu đã héo khô, hoa tàn cánh không rụng như người quân tử không xa rời lý tưởng. 
+
+					Loài hao mang biểu tượng của mùa xuân là hoa đào. Những cánh hoa đào rưng rưng khoe sắc, màu hồng phơn phớt hay hồng đậm xen trong lá non như vẻ e ấp ngại ngùng như người thiếu nữ. Hoa đào như muôn cánh bướm hồng rung rinh trong gió, khoe sắc trong nắng xuân.
+				</span>
+				</div>
+			</div>
+			<div class="cot_3">
+				<div style="width: 90%; height: 25%; margin: auto; margin-top: 0px; background-color: green;">
+					<img style="width:100%" src="images\thamgia.gif">
+					<br>
+					Họ Tên
+					<br>
+					<input style="width: 80%;" type="text" name="">
+					<br>
+					Mã số
+					<br>
+					<input style="width: 80%" type="password" name="">
+					<br>
+					<a href="https:\\google.com"><img style="margin-top: 2px; width: 100%;" src="images\quen.gif"></a>
+				</div>
+				<div style="height:75% ;padding: 100px 0; box-sizing: border-box; background-color: black;">
+					<img style="height: 100%;" src="images\h2.jpg">
+				</div>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>

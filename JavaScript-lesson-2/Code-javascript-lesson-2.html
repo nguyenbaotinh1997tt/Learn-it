@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form>
+		Nhập ngày:
+		<br>
+		<input type = 'number' id = 'input_ngay'>
+		<br>
+		Nhập tháng:
+		<br>
+		<input type = 'number' id = 'input_thang'>
+		<br>
+		Nhập năm:
+		<br>
+		<input type = 'number' id = 'input_nam'>
+		<br>
+		<button type = 'button' onclick = 'ham_tinh_ngay()'>Kiểm tra</button>
+	</form>
+	<script>
+		function ham_tinh_ngay(){
+			let ngay;
+			let thang = parseInt(document.getElementById('input_thang').value);
+			let nam = document.getElementById('input_nam').value;
+			switch(thang){
+				case 1:
+				case 3:
+				case 5:
+				case 7:
+				case 8:
+				case 10:
+				case 12:
+					ngay = 31
+					break
+				case 4:
+				case 6:
+				case 9:
+				case 11:
+					ngay = 30
+					break
+				case 2:
+					if(nam % 4 == 0){ngay = 29} else {ngay = 28}
+			}
+			document.getElementById('thong_bao').innerHTML = `Chuẩn rồi ${ngay}`
+		}
+	</script>
+	<div id = 'thong_bao'></div>
+</body>
+</html>

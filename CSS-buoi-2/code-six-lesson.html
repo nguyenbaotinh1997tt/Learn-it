@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#div_tong{
+			width: 100%;
+			height: 700px;
+			background-color: gray;
+		}
+		.div_1{
+			width: 20%;
+			height: 100%;
+			background-color: red;
+			float: left;
+			position: relative;
+		}
+		.div_2{
+			width: 5%;
+			height: 100%;
+			background-color: yellow;
+			float: left;
+		}
+		.div_3{
+			width: 75%;
+			height: 100%;
+			background-color: green;
+			float: left;
+			position: relative;
+			background-image: url("images/sua1.gif");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 90%;
+		}
+		.anh_4{
+			position: absolute;
+			right: 1%;
+			top: 1%;
+		}
+		.club{
+			width: 70%;
+			height: 100%;
+			float: left;
+			background-color: pink;
+			position: relative;
+		}
+		.bang_thong_tin{
+			width: 80%;
+			height: 80%;
+			background-color: red;
+			margin-left: 10%;
+			position: absolute;
+			bottom: 0%;
+			color: white;
+		}
+		.table_trai{
+			width: 30%;
+			height: 10px;
+			text-align: right;
+		}
+		.table_phai{
+			width: 70%;
+		}
+	</style>
+</head>
+<body>
+	<div id="div_tong">
+		<div class="div_1">
+			<img style="width: 120%; position: absolute; bottom: 0%;" src="images\sanho.gif">
+		</div>
+		<div class="div_2">
+			<img style="height: 100%;" src="images\soc.jpg">
+		</div>
+		<div class="div_3">
+			<div class="anh_4">
+				<img src="images\nhom1a.jpg">
+				<br>
+				<img src="images\nhom1b.jpg">
+				<br>
+				<img src="images\nhom1c.jpg">
+				<br>
+				<img src="images\nhom1d.jpg">
+			</div>
+			<div class="club">
+				<h1 style="padding-left: 2%;">THAM GIA CLUB</h1>
+					<p style="width: 80%; margin: auto;">
+						Quý độc giả hãy điền đầy đủ thông tin để tham gia phát triển Câu lạc bộ ngày càng vững mạnh hơn.
+					</p>
+				<div class="bang_thong_tin">
+					<form>
+						<table style="width: 100%; background-color: green;">
+							<tr>
+								<td class="table_trai">
+									Họ và tên:
+								</td>
+								<td class="table_phai">
+									<input type="text" name="" placeholder="Họ và tên">
+								</td>
+							</tr>
+							<tr>
+								<td class="table_trai">
+									Địa chỉ:
+								</td>
+								<td class="table_phai">
+									<input type="text" name="" placeholder="Địa chỉ" size="30px">
+								</td>
+							</tr>
+							<tr>
+								<td class="table_trai">
+									Email:
+								</td>
+								<td class="table_phai">
+									<input type="Email" name="" placeholder="Địa chỉ mail">
+								</td>
+							</tr>
+							<tr>
+								<td class="table_trai">
+									Điện thoại:
+								</td>
+								<td class="table_phai">
+									<input type="number" name="" placeholder="Số điện thoại" size="15px">
+								</td>
+							</tr>
+							<tr>
+								<td class="table_trai">
+									Ngày sinh:
+								</td>
+								<td class="table_phai">
+									<input type="text" name="" placeholder="" size="1px">
+									/
+									<input type="text" name="" placeholder="" size="1px">
+									/
+									<input type="text" name="" placeholder="" size="3px">
+								</td>
+							</tr>
+							<tr>
+								<td class="table_trai">
+									Đề tài:
+								</td>
+								<td class="table_phai">
+									<input type="text" name="" placeholder="Đề tài" size="15px">
+								</td>
+							</tr>
+							<tr>
+								<td class="table_trai" style="vertical-align: top;">
+									Nhóm:
+								</td>
+								<td class="table_phai">
+									<input id="nghien_cuu" type="radio" name="nhom"><label for="nghien_cuu">Nghiên cứu</label>
+									<br>
+									<input id="hai_ngu" type="radio" name="nhom"><label for="hai_ngu">Hải ngư</label>
+									<br>
+									<input id="vien_duong" type="radio" name="nhom"><label for="vien_duong">Viễn dương</label>
+									<br>
+									<input id="my_thuat" type="radio" name="nhom"><label for="my_thuat">Mỹ thuật</label>
+									<br>
+									<input id="thuc_pham" type="radio" name="nhom"><label for="thuc_pham">Thực phẩm</label>
+									<br>
+									<input id="sinh_vien" type="radio" name="nhom"><label for="sinh_vien">Sinh viên</label>
+									<br>
+								</td>
+							</tr>
+							<tr>
+								<td class="table_trai">
+									Gửi hình:
+								</td>
+								<td class="table_phai">
+									<input type="file" name="" placeholder="Chọn ảnh">
+								</td>
+							</tr>
+							<tr>
+								<td class="table_trai" style="vertical-align: top;">
+									Tài liệu:
+								</td>
+								<td class="table_phai">
+									<input id="sinh_vat_bien" type="checkbox"><label for="sinh_vat_bien">Sinh vật biển</label>
+									<br>
+									<input id="cac_loai_sua_bien" type="checkbox"><label for="cac_loai_sua_bien">Các loài sứa biển</label>
+									<br>
+									<input id="san_ho" type="checkbox"><label for="san_ho">San hô</label>
+									<br>
+									<input id="moi_truong_bien" type="checkbox"><label for="moi_truong_bien">Môi trường biển</label>
+									<br>
+									<input id="khi_hau" type="checkbox"><label for="khi_hau">Khí hậu</label>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html> 
